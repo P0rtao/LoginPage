@@ -1,0 +1,190 @@
+body {
+    background-image: url(img/backdropbottom.jpg);
+    margin: 0px;
+    min-height: 100vh;
+    cursor: url("img/Cursor.png"), default;
+}
+
+@font-face {
+    font-family: fontsix;
+    src: url(font/64font.ttf);
+}
+
+@font-face {
+    font-family: titlesix;
+    src: url(font/64title.otf);
+}
+
+h1 {
+    font-family: titlesix, Verdana, sans-serif;
+    font-size: 50px;
+    color: gold;
+    margin: 40px;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    cursor: url("img/TextCursor.png"), default;
+}
+
+h2 {
+    font-family: titlesix, Verdana, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin: 40px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    cursor: url("img/TextCursor.png"), default;
+}
+
+#Head {
+    display: flex;
+    justify-content: center;
+    background-image: url(img/backdroptop.jpg);
+}
+
+nav {
+    text-align: center;
+    background-color: rgb(99, 73, 124);
+    border: 9px solid rgb(80, 54, 105);
+    border-left: 0px;
+    border-right: 0px;
+}
+
+nav a {
+    padding: 0px 10px;
+    font-family: fontsix, Verdana;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    border: 10px outset rgb(70, 68, 172);
+    background-color: rgb(75, 75, 146);
+}
+
+nav a:hover {
+    background-color: rgb(116, 236, 196);
+    border-color: aquamarine;
+    color: black;
+}
+
+a {
+    cursor: url("img/LinkCursor.png"), default;
+}
+
+p {
+    font-family: fontsix, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+    cursor: url("img/TextCursor.png"), default;
+    line-height: 150%;
+}
+
+input[type=text], input[type=password] {
+    font-family: fontsix, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    height: 60px;
+    width: 700px;
+    background-color: white;
+    border: 10px outset gainsboro;
+    cursor: url("img/TextCursor.png"), default;
+}
+
+input[type=submit], button {
+    font-family: fontsix, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    height: 60px;
+    min-width: 200px;
+    background-color: gold;
+    border: 10px outset goldenrod;
+    cursor: url("img/LinkCursor.png"), default;
+}
+
+input[type=submit]:hover, button:hover {
+    font-family: fontsix, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    min-width: 200px;
+    background-color: limegreen;
+    border: 10px outset green;
+}
+
+#maindiv {
+    text-align: center;
+    background-color: rgb(105, 105, 105);
+    border: 20px outset gray;
+    margin: 20px 50px;
+    min-height: 550px;
+    padding-bottom: 50px;
+}
+
+#adminpanel {
+    text-align: center;
+    background-color: rgb(112, 93, 166);
+    border: 20px outset rgb(124, 109, 166);
+    margin: 20px 50px;
+    min-height: 550px;
+}
+
+#AdminHead {
+    display: flex;
+    justify-content: center;
+    background-image: url(img/Tiles.jpg);
+    background-size: 100px;
+}
+
+#adminbg {
+    background-image: url(img/AdminBG.jpg);
+    background-attachment: fixed;
+}
+
+#ChatHead {
+    display: flex;
+    justify-content: center;
+    background-image: url(img/ChatTop.jpg);
+    background-size: 300px;
+}
+
+#ChatBg {
+    background-image: url(img/ChatBottom.jpg);
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+#usertable {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: brown;
+    border: 10px solid maroon;
+    border-collapse: collapse;
+}
+
+.usertd {
+    font-family: fontsix, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 10px 60px;
+    border: 10px solid maroon;
+    cursor: url("img/TextCursor.png"), default;
+}
+
+#msgtable {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+    background-color: rgb(70, 111, 172);
+    border: 10px solid rgb(33, 97, 139);
+    border-collapse: collapse;
+}
+
+.msgtd {
+    font-family: fontsix, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 10px 30px;
+    border: 10px solid rgb(33, 97, 139);
+    cursor: url("img/TextCursor.png"), default;
+}
