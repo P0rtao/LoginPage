@@ -73,19 +73,19 @@ if (!isset($_SESSION["user"])) {
                         <td class="msgtd">
                             <?= $Msg['User'] ?>
                         </td>
-                        <td class="msgtd">
+                        <td class="msgtds">
                             <?= $Msg['Msg'] ?>
                         </td>
                 <?php 
-                    if ($_SESSION["user"] == $Msg["User"]) { ?>
-                        <td class="msgtd">
+                    if ($_SESSION["user"] == $Msg["User"] or $_SESSION["user"] == "PatinhoUser") { ?>
+                        <td>
                             <form action='editmessage/editmessagepage.php' method="post">
                                 <input type="hidden" name="msgid" value="<?php echo $Msg['Id'] ?>" />
                                 <input type="hidden" name="oldmsg" value="<?php echo $Msg['Msg'] ?>" />
                                 <input type="submit" name="submit" value="Edit" />
                             </form>
                         </td>
-                        <td class="msgtd">
+                        <td>
                         <form action='delmessage.php' method="post">
                             <input type="hidden" name="msgid" value="<?php echo $Msg['Id'] ?>" />
                             <input type="submit" name="submit" value="Delete" />

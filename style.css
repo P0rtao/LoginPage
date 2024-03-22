@@ -98,6 +98,7 @@ input[type=submit], button {
     min-width: 200px;
     background-color: gold;
     border: 10px outset goldenrod;
+    margin: 5px;
     cursor: url("img/LinkCursor.png"), default;
 }
 
@@ -175,8 +176,6 @@ input[type=submit]:hover, button:hover {
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
-    background-color: rgb(70, 111, 172);
-    border: 10px solid rgb(33, 97, 139);
     border-collapse: collapse;
 }
 
@@ -186,5 +185,21 @@ input[type=submit]:hover, button:hover {
     color: white;
     padding: 10px 30px;
     border: 10px solid rgb(33, 97, 139);
+    background-color: rgb(70, 111, 172);
     cursor: url("img/TextCursor.png"), default;
+}
+
+.msgtds {
+    font-family: fontsix, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: white;
+    padding: 10px 30px;
+    min-width: 700px;
+    border: 10px solid rgb(33, 97, 139);
+    background-color: rgb(70, 111, 172);
+    cursor: url("img/TextCursor.png"), default;
+}
+
+.edited {
+    color: yellow;
 }

@@ -22,7 +22,7 @@ if (!isset($_SESSION["user"])) {
         </header>
 
         <nav>
-            <a href="../hub.php">Home</a>
+            <a href="../hub.php">Cancel</a>
         </nav>
 
         <div id="maindiv">
@@ -30,7 +30,7 @@ if (!isset($_SESSION["user"])) {
             <h2>Edit Your Message</h2>
 
             <form action="editmessagehandler.php" method="post">
-                <p>Message</p>  <input type="text" name="newmsg" value="<?php echo str_replace(" (Edited)", "" ,$_POST["oldmsg"]) ?>"/>
+                <p>Message</p>  <input type="text" name="newmsg" value="<?php echo str_replace("<p class='edited'> (Edited)</p>", "" ,$_POST["oldmsg"]) ?>"/>
                 <input type="hidden" name="msgtoedit" value="<?php echo($_POST["msgid"]) ?>" />
                 <br><br>
                 <input type="Submit" value="Edit Message" />

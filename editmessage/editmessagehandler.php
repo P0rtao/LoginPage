@@ -10,7 +10,7 @@ try {
     $conn = new PDO($dst, $utilizador, $password);
     
     $msgtoedit = $_POST['msgtoedit'];
-    $newmsg = $_POST['newmsg'] . " (Edited)";
+    $newmsg = $_POST['newmsg'] . "<p class='edited'> (Edited)</p>";
     
     if (!$newmsg) {
     
